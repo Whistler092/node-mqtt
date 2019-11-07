@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "SSH FS - raspberry",
+			"uri": "ssh://raspberry/"
+		},
+		{
+			"path": "/Users/ramiroandres/workspace/esp8266/nodejs"
+		}
+	]
+}

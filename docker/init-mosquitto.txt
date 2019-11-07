@@ -1,0 +1,8 @@
+docker run --name=mosquitto \
+           --restart unless-stopped \
+           -d \
+           -e TZ=America/Bogota \
+           -p 1883:1883 \
+           -v /home/pi/dockerdata/mosquitto/data:/mosquitto/data \
+           -v /home/pi/dockerdata/mosquitto/log:/mosquitto/log \
+           dromer1967/arm32v7-mosquitto

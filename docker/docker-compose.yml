@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mosquitto:
+      container_name: mosquitto
+      image: eclipse-mosquitto
+      user: "1000:996"
+      ports:
+        - 1883:1883
+      volumes:
+        - /etc/localtime:/etc/localtime:ro
+        - ${USERDIR}/docker/mosquitto/config:/mosquitto/config:ro
+        - ${USERDIR}/docker/mosquitto/data:/mosquitto/data
+        - ${USERDIR}/docker/mosquitto/log:/mosquitto/log
+      restart: always
+      network_mode: host
