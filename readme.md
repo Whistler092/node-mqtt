@@ -1,0 +1,1 @@
+$ docker run -it -p 1883:1883 -p 9001:9001 -v mosquitto.conf:/Users/ramiroandres/workspace/node-lamp/mosquitto/config/mosquitto.conf -v /Users/ramiroandres/workspace/node-lamp/mosquitto/data -v /Users/ramiroandres/workspace/node-lamp/mosquitto/log eclipse-mosquitto
